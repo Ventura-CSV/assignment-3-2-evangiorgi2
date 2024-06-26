@@ -1,12 +1,12 @@
 
 def main():
-    num1 = int(input('Enter the first number: '))
-    num2 = int(input('Enter the second number: '))
-    num3 = int(input('Enter the third number: '))
+    num1 = float(input('Enter the first number: '))
+    num2 = float(input('Enter the second number: '))
+    num3 = float(input('Enter the third number: '))
   
     minval = int()
     maxval = int()
-    median = float()
+    median = int()
 
     if num1 < num2 and num1 < num3:
         minval = num1
