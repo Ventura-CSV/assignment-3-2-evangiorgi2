@@ -4,8 +4,10 @@ def main():
     num2 = int(input('Enter the second number: '))
     num3 = int(input('Enter the third number: '))
   
-    minval, median, maxval = int()
-    
+    minval = int()
+    maxval = int()
+    median = float()
+
     if num1 < num2 and num1 < num3:
         minval = num1
     else:
@@ -14,7 +16,7 @@ def main():
         else:
             minval = num3
             
-    median = num1 + num2 + num3 % 3
+    median = (num1 + num2 + num3) / 3 
             
     if num1 > num2 and num1 > num3:
         maxval = num1
@@ -25,7 +27,7 @@ def main():
             maxval = num3
             
 
-    print(minval, median, maxval)
+    print(f'{minval}, {median:.2f}, {maxval}')
     
     return minval, median, maxval
 
